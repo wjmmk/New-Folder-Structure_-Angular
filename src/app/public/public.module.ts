@@ -8,7 +8,8 @@ import { PublicComponent } from './public.component';
 @NgModule({
     imports: [
         PublicRoutingModule,
-        SharedModule
+        SharedModule,
+        
     ],
     declarations:[
         HomeComponent,
