@@ -1,0 +1,29 @@
+<h1> Jugando con la API de Games Of Thrones.</h1>
+
+<mat-tab-group>
+    <mat-tab label="characters"> 
+      <div *ngFor="let item of characters">
+        <mat-card>
+          <mat-card-header>
+            <mat-card-title> {{item.firstName + ' ' + item.lastName}} </mat-card-title>
+            <mat-card-subtitle> {{item.family}} </mat-card-subtitle>
+          </mat-card-header>  
+          <img mat-card-image [src]="item.imageUrl" class="character-image">
+          <mat-card-content>
+            <p>
+                {{ item.title }}
+            </p>
+          </mat-card-content>
+        </mat-card>
+      </div>
+    </mat-tab>
+
+    <mat-tab label="continents"> 
+        <div *ngFor="let item of continents">
+            <h1> {{item.name}} </h1>
+        </div>
+    </mat-tab>
+
+   <!--  <mat-tab label="Third"> Content 3 </mat-tab> -->
+</mat-tab-group>
+  
